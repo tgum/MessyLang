@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Quickstart Guide</title>
+	</head>
+	<body>
+		<h1>MessyLang Docs</h1>
+
+<code class='block'><pre>
+VAR "x" "messy"
+VAR "y" "lang"
+ADD x y "y"
+ADD y "-is-cool" "y"
+PRINT y
+</pre></code>
+
+		<h2>Quickstart.</h2>
+		<h2>Hello, World!</h2>
+		A Hello World program in messylang should look like this:
+		<code class='block'><pre>
+PRINT "Hello-World"</pre></code>
+
+		Let's go through it step by step.
+		<h3>1. Line</h3>
+		A messylang line is a single line of a messylang program, each line being an instruction.
+		Each line is divided into keywords and arguments, separated by spaces.
+		<h3>2. Keyword</h3>
+		A keyword is the first word of a line and the name of an instruction to the machine and takes any number of arguments (more on that later).
+		Keywords must always be at the start of a line and <em>must</em> be UPPERCASE.
+		The <code class='inline'><pre>PRINT</pre></code> keyword is the simplest keyword in messylang. It takes a string as its first and only argument, and prints it out on the screen.
+		<h3>3. Arguments</h3>
+		Now the rest of the line are the arguments, arguments being space separated values that are given to the keyword to process an effect, more on the <a href='/program_structure/arguments.html'>arguments page</a>
+		In this example, the argument given to <code class='inline'><pre>PRINT</pre></code> is <code class='inline'><pre>"Hello-World"</pre></code>.
+		Values must be of one of the standard messylang data-types (BOOL, STRING, NUMBER, more at the <a href='/program_structure/data-types.html'>data types page</a>).
+		In this case, the argument is enclosed by double quotes <code class='inline'><pre>"</pre></code>, which means it is a string (a piece of text which may only contain alphanumeric characters, dashes <code class='inline'><pre>-</pre></code>, and underscores <code class='inline'><pre>_</pre></code>)
+	</body>
+</html>
+

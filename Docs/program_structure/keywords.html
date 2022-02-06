@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/style.css">
+		<title>Keywords</title>
+	</head>
+	<body>
+		<h1>MessyLang Docs</h1>
+		<code class='block'><pre>
+VAR "x" "messy"
+VAR "y" "lang"
+ADD x y "y"
+ADD y "-is-cool" "y"
+PRINT y
+</pre></code>
+		<h1>List of MessyLang keywords</h1>
+		<h2>What is a keyword?</h2>
+		A keyword is the first word of a line and the name of an instruction to the machine and takes any number of arguments (more on that on the <a href='/program_structure/arguments.html'>arguments page</a>).
+		Keywords must always be at the start of a line and be UPPERCASE.<br>
+		<h2>All the MessyLang keywords</h2>
+		<h3>GOTO</h3>
+		<h4>Arguments:</h4>
+		Number: "line"
+		<h4>Description:</h4>
+		Takes a single argument <code class='inline'><pre>line</pre></code> and set the program counter to that line
+		<h3>GOTOIF</h3>
+		<h4>Arguments:</h4>
+		Number: "line"<br>
+		Bool: "condition"<br>
+		<h4>Description:</h4>
+		If <code class='inline'><pre>condition</pre></code> is true, then set the program counter to <code class='inline'><pre>line</pre></code>
+		<h3>GOTOIFNOT</h3>
+		<h4>Arguments:</h4>
+		Number: "line"<br>
+		Bool: "condition"<br>
+		<h4>Description:</h4>
+		If <code class='inline'><pre>condition</pre></code> is false, then set the program counter to <code class='inline'><pre>line</pre></code>
+		<h3>GOTOIFELSE</h3>
+		<h4>Arguments:</h4>
+		Number: "lineTrue"<br>
+		Number: "lineFalse"<br>
+		Bool: "condition"<br>
+		<h4>Description:</h4>
+		If <code class='inline'><pre>condition</pre></code> is true, then set the program counter to <code class='inline'><pre>lineTrue</pre></code>, else set program counter to <code class='inline'><pre>lineFalse</pre></code>
+		<h3>PRINT</h3>
+		<h4>Arguments:</h4>
+		String: "string"<br>
+		<h4>Description:</h4>
+		Prints <code class='inline'><pre>string</pre></code> to the screen<br>
+		<h3>VAR</h3>
+		<h4>Arguments:</h4>
+		String: "name"<br>
+		Any: "value"<br>
+		<h4>Description:</h4>
+		Creates a new variable called <code class='inline'><pre>name</pre></code> with the value of <code class='inline'><pre>value</pre></code>
+		<h3>SETVAR</h3>
+		<h4>Arguments:</h4>
+		String: "name"<br>
+		Any: "value"<br>
+		<h4>Description:</h4>
+		Sets the value of an existing variable called <code class='inline'><pre>name</pre></code> to <code class='inline'><pre>value</pre></code>
+		<h3>ADD</h3>
+		<h4>Arguments:</h4>
+		Any: "val1"<br>
+		Type of <code class='inline'><pre>val1</pre></code>: "val2"
+		String: "varname"<br>
+		<h4>Description:</h4>
+		Adds <code class='inline'><pre>val1</pre></code> and <code class='inline'><pre>val2</pre></code> togever and put the result in the existing variable called <code class='inline'><pre>varname</pre></code>
+		<h3>SUB</h3>
+		<h4>Arguments:</h4>
+		Number: "val1"<br>
+		Number: "val2"<br>
+		String: "varname"<br>
+		<h4>Description:</h4>
+		Subtracts <code class='inline'><pre>val2</pre></code> from <code class='inline'><pre>val1</pre></code> and put the result in the existing variable called <code class='inline'><pre>varname</pre></code>
+		<h3>MOD</h3>
+		<h4>Arguments:</h4>
+		Number: "val1"<br>
+		Number: "val2"<br>
+		String: "varname<br>
+		<h4>Description:</h4>
+		Takes the remainder of <code class='inline'><pre>val1</pre></code> divided by <code class='inline'><pre>val2</pre></code> and put the result in the existing variable called <code class='inline'><pre>varname</pre></code>
+		<h3>NUMBER</h3>
+		<h4>Arguments:</h4>
+		String: "val"<br>
+		String: "varname"<br>
+		<h4>Description:</h4>
+		Convert (if possible) <code class='inline'><pre>val</pre></code> to a number and puts it in the variable called <code class='inline'><pre>varname</pre></code>
+		<h3>STRING</h3>
+		<h4>Arguments:</h4>
+		Number: "val"<br>
+		String: "varname"<br>
+		<h4>Description:</h4>
+		Convert <code class='inline'><pre>val</pre></code> to a string and puts it in the variable called <code class='inline'><pre>varname</pre></code>
+	</body>
+</html>
+

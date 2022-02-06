@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" placeholder="project name" id="project-name">
+		<button type="button" id="save">save</button>
+		<input id="file" type="file">
+		<label id="upload" for="file">upload</label>
+		
+		<button type="button" id="run">run</button>
+
+		<a href="#" id="download-link" style="display: none;"></a>
+
+		<div id="main">
+			<div id="numbers">
+				<div>1.&nbsp;</div>
+			</div>
+			<textarea id="code" contenteditable="true" autofocus="true" placeholder="Code goes in here..." spellcheck="false"></textarea>
+
+			<div id="output">And output will go here.</div>
+		</div>
+
+		<script src="messylang.js" type="module"></script>
+		<script src="client.js" type="module"></script>
+	</body>
+</html>
